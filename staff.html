@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Page | Assignment 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="staff">
+  <!--
+    Student name: Jordan Champagne
+    Technical background: PLC programming and robotics systems.
+    GitHub Copilot was used primarily as a learning tool to explain assignment concepts with parallels to PLC programming and robotics principles, help draft portions of code, suggest accessibility-friendly improvements, and assist with debugging and refinement.
+    Final code and content decisions, edits, and testing were completed by Jordan Champagne.
+  -->
+
+  <header class="site-header">
+    <h1>Assignment 1: JavaScript Essentials</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="mark-to-grade.html">Mark to Grade</a></li>
+        <li><a href="staff.html" class="active">Staff</a></li>
+        <li><a href="temperature.html">Temperature</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Staff Information</h2>
+      <p>Sort the staff list by name or salary. Click the same button again to toggle ascending or descending order.</p>
+
+      <div class="button-row">
+        <button id="sort-name-btn" type="button">Sort by Name (A to Z)</button>
+        <button id="sort-salary-btn" type="button">Sort by Salary (Low to High)</button>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody id="staff-table-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Jordan Champagne | Copyright &copy; <span class="current-year"></span> | Current date: <span class="current-date"></span></p>
+  </footer>
+
+  <script src="staff-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

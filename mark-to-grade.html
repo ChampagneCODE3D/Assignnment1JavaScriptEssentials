@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark to Grade Converter | Assignment 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="mark-to-grade">
+  <!--
+    Student name: Jordan Champagne
+    Technical background: PLC programming and robotics systems.
+    GitHub Copilot was used primarily as a learning tool to explain assignment concepts with parallels to PLC programming and robotics principles, help draft portions of code, suggest accessibility-friendly improvements, and assist with debugging and refinement.
+    Final code and content decisions, edits, and testing were completed by Jordan Champagne.
+  -->
+
+  <header class="site-header"> <!-- Site header section -->
+    <h1>Assignment 1: JavaScript Essentials</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="mark-to-grade.html" class="active">Mark to Grade</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="temperature.html">Temperature</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card"> <!-- Card section for mark to grade converter -->
+      <h2>Mark to Grade Converter</h2>
+      <p>Enter a mark between 0 and 100. The converter validates your input and returns a grade.</p>
+
+      <div class="form-grid">
+        <label for="mark-input-box">Student mark</label>
+        <input id="mark-input-box" type="text" placeholder="e.g., 87">
+      </div>
+
+      <button id="convert-mark-btn" type="button">Convert Mark</button>
+
+      <p id="validation-message" class="status-message" aria-live="polite"></p> // Validation messages for user input are displayed here, with aria-live for accessibility.
+      <p id="grade-output" class="grade-output" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Jordan Champagne | Copyright &copy; <span class="current-year"></span> | Current date: <span class="current-date"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

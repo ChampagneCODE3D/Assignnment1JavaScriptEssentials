@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter | Assignment 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="temperature">
+  <!--
+    Student name: Jordan Champagne
+    Technical background: PLC programming and robotics systems.
+    GitHub Copilot was used primarily as a learning tool to explain assignment concepts with parallels to PLC programming and robotics principles, help draft portions of code, suggest accessibility-friendly improvements, and assist with debugging and refinement.
+    Final code and content decisions, edits, and testing were completed by Jordan Champagne.
+  -->
+
+  <header class="site-header">
+    <h1>Assignment 1: JavaScript Essentials</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="mark-to-grade.html">Mark to Grade</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="temperature.html" class="active">Temperature</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Temperature Converter</h2>
+      <p>Select the input unit, enter a value, and conversion to the other units happens automatically.</p>
+      <!-- Rankine is included as an optional extension inspired by thermodynamics studies at SAIT. -->
+
+      <div class="form-grid">
+        <label for="input-unit">Input unit</label>
+        <select id="input-unit">
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="celsius">Celsius</option>
+          <option value="kelvin">Kelvin</option>
+          <option value="rankine">Rankine</option>
+        </select>
+
+        <label for="temperature-input">Input value</label>
+        <input id="temperature-input" type="number" step="any" placeholder="Enter temperature">
+      </div>
+
+      <div class="form-grid output-grid">
+        <label for="fahrenheit-output">Fahrenheit (F)</label>
+        <input id="fahrenheit-output" type="text" readonly>
+
+        <label for="celsius-output">Celsius (C)</label>
+        <input id="celsius-output" type="text" readonly>
+
+        <label for="kelvin-output">Kelvin (K)</label>
+        <input id="kelvin-output" type="text" readonly>
+
+        <label for="rankine-output">Rankine (R)</label>
+        <input id="rankine-output" type="text" readonly>
+      </div>
+
+      <p id="temperature-message" class="status-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Jordan Champagne | Copyright &copy; <span class="current-year"></span> | Current date: <span class="current-date"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
